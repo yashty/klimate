@@ -1,50 +1,52 @@
-# Klimate Weather App
+# Climate - Weather App 🌦️  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview  
+**Climate** is a modern weather app built with React.js, TypeScript, and Tailwind CSS. It provides real-time weather updates, including current conditions, hourly forecasts, and a graphical temperature representation.  
 
-Currently, two official plugins are available:
+## Features  
+- ✅ Get weather updates for any city in the world 🌍  
+- ✅ View hourly temperature trends with interactive charts 📈  
+- ✅ Save favorite locations for quick access 📌  
+- ✅ Dark mode & light mode support 🌗  
+- ✅ Fully responsive UI for all devices 📱💻  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack  
+- **React.js** - Component-based UI development  
+- **TypeScript** - Strongly-typed JavaScript  
+- **ShadCN UI** - Pre-built UI components  
+- **TanStack Query (React Query)** - API data fetching & caching  
+- **Recharts** - Interactive data visualization  
+- **Tailwind CSS** - Utility-first styling  
 
-## Expanding the ESLint configuration
+## Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/climate-weather-app.git  
+   cd climate-weather-app  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+### Install dependencies
+```bash
+npm install  
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+### Set up environment variables
+#### Create a .env file and add your OpenWeather API key
+```bash
+VITE_OPEN_WEATHER_API_KEY=your_api_key_here    
 ```
+### Run the app
+```bash
+npm run dev  
+```
+
+## Deploy
+#### Climate can be easily deployed using platforms like Vercel or Netlify.
+
+## API Integration
+- Uses OpenWeatherMap API for fetching weather data
+- Geolocation API to determine user’s current location
+- React Query for efficient data fetching & caching
+
+
+## License
+#### MIT License © 2025 Your Name
